@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.slide-panel {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 380px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.12);
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
+  padding: 20px 16px;
+}
+
+.slide-panel.open {
+  right: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+  max-height: 140px;
+}
+
+button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#history {
+  margin-top: 24px;
+}
+
+#record-list {
+  list-style: none;
+  padding: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}

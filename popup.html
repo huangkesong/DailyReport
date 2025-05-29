@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>日报助手</title>
+    <style>
+        body {
+            width: 400px;
+            padding: 15px;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .date {
+            font-size: 14px;
+            color: #666;
+        }
+        .section {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            min-height: 60px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 14px;
+            resize: vertical;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #exportBtn {
+            background: #2196F3;
+        }
+        #exportBtn:hover {
+            background: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>日报记录【popup】</h2>
+            <div class="date" id="currentDate"></div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">已完成工作</div>
+            <textarea id="completedWork" placeholder="请输入今天已完成的工作内容..."></textarea>
+        </div>
+
+        <div class="section">
+            <div class="section-title">进行中工作</div>
+            <textarea id="ongoingWork" placeholder="请输入正在进行的工作内容..."></textarea>
+        </div>
+
+        <div class="section">
+            <div class="section-title">遇到的问题</div>
+            <textarea id="problems" placeholder="请输入遇到的问题或需要协助的事项..."></textarea>
+        </div>
+
+        <div class="actions">
+            <button id="saveBtn">保存日报</button>
+            <button id="exportBtn">导出日报</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
