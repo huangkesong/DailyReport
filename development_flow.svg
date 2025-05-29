@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+    <!-- 标题 -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold">日报插件开发流程图</text>
+    
+    <!-- 第一阶段：功能规划 -->
+    <rect x="50" y="80" width="200" height="200" rx="10" fill="#E8F5E9" stroke="#2E7D32"/>
+    <text x="150" y="110" text-anchor="middle" font-weight="bold">功能规划</text>
+    <text x="70" y="140" font-size="12">
+        <tspan x="70" dy="0">1. 快速记录功能</tspan>
+        <tspan x="70" dy="20">- 记录窗口</tspan>
+        <tspan x="70" dy="20">- 实时记录</tspan>
+        <tspan x="70" dy="20">- 分类记录</tspan>
+        <tspan x="70" dy="20">2. 数据存储功能</tspan>
+        <tspan x="70" dy="20">3. 提醒功能</tspan>
+    </text>
+    
+    <!-- 第二阶段：技术架构 -->
+    <rect x="300" y="80" width="200" height="200" rx="10" fill="#E3F2FD" stroke="#1565C0"/>
+    <text x="400" y="110" text-anchor="middle" font-weight="bold">技术架构</text>
+    <text x="320" y="140" font-size="12">
+        <tspan x="320" dy="0">1. 前端</tspan>
+        <tspan x="320" dy="20">- HTML, CSS, JavaScript</tspan>
+        <tspan x="320" dy="20">2. 存储</tspan>
+        <tspan x="320" dy="20">- Chrome Storage API</tspan>
+        <tspan x="320" dy="20">3. 通知</tspan>
+        <tspan x="320" dy="20">- Chrome Notifications API</tspan>
+    </text>
+    
+    <!-- 第三阶段：开发步骤 -->
+    <rect x="550" y="80" width="200" height="200" rx="10" fill="#FFF3E0" stroke="#E65100"/>
+    <text x="650" y="110" text-anchor="middle" font-weight="bold">开发步骤</text>
+    <text x="570" y="140" font-size="12">
+        <tspan x="570" dy="0">1. 基础框架搭建</tspan>
+        <tspan x="570" dy="20">2. 核心功能开发</tspan>
+        <tspan x="570" dy="20">3. 扩展功能</tspan>
+        <tspan x="570" dy="20">4. 测试和优化</tspan>
+    </text>
+    
+    <!-- 具体实现步骤 -->
+    <rect x="50" y="350" width="700" height="600" rx="10" fill="#F5F5F5" stroke="#616161"/>
+    <text x="400" y="380" text-anchor="middle" font-weight="bold">详细开发流程</text>
+    
+    <!-- 第一步：基础框架 -->
+    <rect x="70" y="400" width="150" height="100" rx="5" fill="#BBDEFB" stroke="#1976D2"/>
+    <text x="145" y="430" text-anchor="middle" font-size="12" font-weight="bold">基础框架搭建</text>
+    <text x="80" y="450" font-size="10">
+        <tspan x="80" dy="0">- manifest.json</tspan>
+        <tspan x="80" dy="15">- 基本UI界面</tspan>
+        <tspan x="80" dy="15">- 插件图标设置</tspan>
+    </text>
+    
+    <!-- 箭头 -->
+    <path d="M220 450 L270 450" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 第二步：核心功能 -->
+    <rect x="270" y="400" width="150" height="100" rx="5" fill="#C8E6C9" stroke="#388E3C"/>
+    <text x="345" y="430" text-anchor="middle" font-size="12" font-weight="bold">核心功能开发</text>
+    <text x="280" y="450" font-size="10">
+        <tspan x="280" dy="0">- 日报记录表单</tspan>
+        <tspan x="280" dy="15">- 本地存储功能</tspan>
+        <tspan x="280" dy="15">- 数据导出功能</tspan>
+    </text>
+    
+    <!-- 箭头 -->
+    <path d="M420 450 L470 450" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 第三步：扩展功能 -->
+    <rect x="470" y="400" width="150" height="100" rx="5" fill="#FFE0B2" stroke="#F57C00"/>
+    <text x="545" y="430" text-anchor="middle" font-size="12" font-weight="bold">扩展功能</text>
+    <text x="480" y="450" font-size="10">
+        <tspan x="480" dy="0">- 提醒系统</tspan>
+        <tspan x="480" dy="15">- 历史记录查看</tspan>
+        <tspan x="480" dy="15">- 用户界面优化</tspan>
+    </text>
+    
+    <!-- 箭头 -->
+    <path d="M545 500 L545 550" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 第四步：测试优化 -->
+    <rect x="470" y="550" width="150" height="100" rx="5" fill="#F8BBD0" stroke="#C2185B"/>
+    <text x="545" y="580" text-anchor="middle" font-size="12" font-weight="bold">测试和优化</text>
+    <text x="480" y="600" font-size="10">
+        <tspan x="480" dy="0">- 功能测试</tspan>
+        <tspan x="480" dy="15">- 性能优化</tspan>
+        <tspan x="480" dy="15">- 用户体验改进</tspan>
+    </text>
+    
+    <!-- 箭头定义 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+        </marker>
+    </defs>
+</svg>
